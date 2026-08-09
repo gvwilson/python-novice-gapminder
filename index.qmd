@@ -9,9 +9,7 @@ both [Data Carpentry][dc-lessons] and [Software Carpentry][swc-lessons] workshop
 This lesson references [JupyterLab][jupyterlab] but can be taught using alternative Python 3 interpreters
 as well (e.g., repl.it, Anaconda).
 
-::::::::::::::::::::::::::::::::::::::::::  prereq
-
-## Prerequisites
+::: {.callout-caution title="Prerequisites"}
 
 1. Learners need to understand what files and directories are,
   what a working directory is,
@@ -23,9 +21,9 @@ as well (e.g., repl.it, Anaconda).
   please download and unzip the file
   [python-novice-gapminder-data.zip](episodes/files/python-novice-gapminder-data.zip).
 
-Please see [the setup instructions](learners/setup.md)
+Please see [the setup instructions](setup.qmd)
 for more details.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

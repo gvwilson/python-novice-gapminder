@@ -4,19 +4,19 @@ teaching: 5
 exercises: 10
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Be able to read and write globbing expressions that match sets of files.
 - Use glob to create lists of files.
 - Write for loops to perform operations on files given their names in a list.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I process many data sets with a single command?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Use a `for` loop to process files given a list of their names.
 
@@ -107,7 +107,7 @@ data/gapminder_gdp_oceania.csv 10039.59564
 - But note that the minimum of the entire data set is also the minimum of one of the data sets,
   which is a nice check on correctness.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Determining Matches
 
@@ -117,7 +117,7 @@ Which of these files is *not* matched by the expression `glob.glob('data/*as*.cs
 2. `data/gapminder_gdp_americas.csv`
 3. `data/gapminder_gdp_asia.csv`
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -125,11 +125,11 @@ Which of these files is *not* matched by the expression `glob.glob('data/*as*.cs
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Minimum File Size
 
@@ -149,7 +149,7 @@ print('smallest file has', fewest, 'records')
 Note that the [`DataFrame.shape()` method][shape-method]
 returns a tuple with the number of rows and columns of the data frame.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -170,11 +170,11 @@ What other special strings does the [`float` function][float-function] recognize
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Comparing Data
 
@@ -185,7 +185,7 @@ non-numeric columns in a dataframe computation so you may need
 to either filter out those columns or tell pandas to ignore them.
 
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -226,11 +226,11 @@ plt.legend()
 plt.show()
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Dealing with File Paths
 
@@ -257,7 +257,7 @@ gapminder_gdp_africa
 function.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 [shape-method]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.shape.html
 [float-function]: https://docs.python.org/3/library/functions.html#float
@@ -265,12 +265,12 @@ function.
 [pathlib-module]: https://docs.python.org/3/library/pathlib.html
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Use a `for` loop to process files given a list of their names.
 - Use `glob.glob` to find sets of files whose names match a pattern.
 - Use `glob` and `for` to process batches of files.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

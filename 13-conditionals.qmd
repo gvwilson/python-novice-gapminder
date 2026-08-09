@@ -4,18 +4,18 @@ teaching: 10
 exercises: 15
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Correctly write programs that use if and else statements and simple Boolean expressions (without logical operators).
 - Trace the execution of unnested conditionals and conditionals inside loops.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can programs do different things for different data?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Use `if` statements to control whether or not a block of code is executed.
 
@@ -180,7 +180,7 @@ final velocity: 30.0
   to show the final value of `velocity`,
   since its value is updated by the last iteration of the loop.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Compound Relations Using `and`, `or`, and Parentheses
 
@@ -222,9 +222,9 @@ if mass[i] <= 2 or (mass[i] >= 5 and velocity[i] > 20):
 so it is perfectly clear to a reader (and to Python) what you really mean.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Tracing Execution
 
@@ -239,7 +239,7 @@ elif pressure <= 50.0:
 print(pressure)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -247,11 +247,11 @@ print(pressure)
 25.0
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Trimming Values
 
@@ -274,7 +274,7 @@ print(result)
 [0, 1, 1, 1, 0, 1]
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -289,11 +289,11 @@ for value in original:
 print(result)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Processing Small Files
 
@@ -308,7 +308,7 @@ for filename in glob.glob('data/*.csv'):
         print(filename, len(contents))
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -321,11 +321,11 @@ for filename in glob.glob('data/*.csv'):
         print(filename, len(contents))
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Initializing
 
@@ -347,7 +347,7 @@ print(smallest, largest)
 What are the advantages and disadvantages of using this method
 to find the range of the data?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -393,11 +393,11 @@ largest = max(values)
 print(smallest, largest)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Use `if` statements to control whether or not a block of code is executed.
 - Conditionals are often used inside loops.
@@ -406,6 +406,6 @@ print(smallest, largest)
 - Conditions are tested once, in order.
 - Create a table showing variables' values to trace a program's execution.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

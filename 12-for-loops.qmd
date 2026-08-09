@@ -4,19 +4,19 @@ teaching: 10
 exercises: 15
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Explain what for loops are normally used for.
 - Trace the execution of a simple (unnested) loop and correctly state the values of variables in each iteration.
 - Write for loops that use the Accumulator pattern to aggregate values.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I make a program do many things?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## A *for loop* executes commands once for each value in a collection.
 
@@ -167,13 +167,13 @@ print(total)
   - Assign that to `total`, replacing the current value.
 - We have to add `number + 1` because `range` produces 0..9, not 1..10.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Classifying Errors
 
 Is an indentation error a syntax error or a runtime error?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -182,11 +182,11 @@ A program with a runtime error will start but an error will be thrown under cert
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Tracing Execution
 
@@ -199,7 +199,7 @@ for char in "tin":
     total = total + 1
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -213,11 +213,11 @@ for char in "tin":
 | 2       | total = 2 char = 'n' | 
 | 3       | total = 3 char = 'n' | 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Reversing a String
 
@@ -232,7 +232,7 @@ for char in original:
 print(result)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -244,11 +244,11 @@ for char in original:
 print(result)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Practice Accumulating
 
@@ -263,7 +263,7 @@ for word in ["red", "green", "blue"]:
 print(total)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -274,7 +274,7 @@ for word in ["red", "green", "blue"]:
 print(total)
 ```
 
-:::::::::::::::::::::::::
+:::
 
 ```python
 # List of word lengths: ["red", "green", "blue"] => [3, 5, 4]
@@ -284,7 +284,7 @@ for word in ["red", "green", "blue"]:
 print(lengths)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -295,7 +295,7 @@ for word in ["red", "green", "blue"]:
 print(lengths)
 ```
 
-:::::::::::::::::::::::::
+:::
 
 ```python
 # Concatenate all words: ["red", "green", "blue"] => "redgreenblue"
@@ -306,7 +306,7 @@ for ____ in ____:
 print(result)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -318,14 +318,14 @@ for word in words:
 print(result)
 ```
 
-:::::::::::::::::::::::::
+:::
 
 **Create an acronym:** Starting from the list `["red", "green", "blue"]`, create the acronym `"RGB"` using
 a for loop.
 
 **Hint:** You may need to use a string method to properly format the acronym.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -336,11 +336,11 @@ for word in ["red", "green", "blue"]:
 print(acronym)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Cumulative Sum
 
@@ -358,7 +358,7 @@ print(cumulative)
 data = [1,2,2,5]
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -372,11 +372,11 @@ for number in data:
 print(cumulative)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Identifying Variable Name Errors
 
@@ -399,7 +399,7 @@ for number in range(10):
 print(message)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -418,11 +418,11 @@ for number in range(10):
 print(message)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Identifying Item Errors
 
@@ -436,7 +436,7 @@ seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print('My favorite season is ', seasons[4])
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -447,11 +447,11 @@ seasons = ['Spring', 'Summer', 'Fall', 'Winter']
 print('My favorite season is ', seasons[3])
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - A *for loop* executes commands once for each value in a collection.
 - A `for` loop is made up of a collection, a loop variable, and a body.
@@ -462,6 +462,6 @@ print('My favorite season is ', seasons[3])
 - Use `range` to iterate over a sequence of numbers.
 - The Accumulator pattern turns many values into one.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

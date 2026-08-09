@@ -4,18 +4,18 @@ teaching: 10
 exercises: 10
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Write programs that assign scalar values to variables and perform calculations with those values.
 - Correctly trace value changes in programs that use scalar assignment.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I store data in programs?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Use variables to store values.
 
@@ -82,9 +82,9 @@ NameError: name 'last_name' is not defined
 ```
 
 - The last line of an error message is usually the most informative.
-- We will look at error messages in detail [later](17-scope.md#reading-error-messages).
+- We will look at error messages in detail [later](17-scope.qmd#reading-error-messages).
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Variables Persist Between Cells
 
@@ -107,7 +107,7 @@ cell it will print out `1`. To prevent confusion, it can be helpful to use the `
 clears the interpreter and runs everything from a clean slate going top to bottom.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Variables can be used in calculations.
 
@@ -201,7 +201,7 @@ print(ewr_422_yY, 'is', flabadab, 'years old')
 - Use meaningful variable names to help other people understand what the program does.
 - The most important "other person" is your future self.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Swapping Values
 
@@ -217,7 +217,7 @@ x = y      #              #              #               #
 y = swap   #              #              #               #
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -235,11 +235,11 @@ variable for temporary storage. This is a fairly common programming idiom.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Predicting Values
 
@@ -253,7 +253,7 @@ position = initial
 initial = 'right'
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -273,23 +273,23 @@ of `'left'`.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Challenge
 
 If you assign `a = 123`,
 what happens if you try to get the second digit of `a` via `a[1]`?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
 Numbers are not strings or sequences and Python will raise an error if you try to perform an index operation on a
-number. In the [next lesson on types and type conversion](03-types-conversion.md)
+number. In the [next lesson on types and type conversion](03-types-conversion.qmd)
 we will learn more about types and how to convert between different types. If you want the Nth digit of a number you
 can convert it into a string using the `str` built-in function and then perform an index operation on that string.
 
@@ -311,11 +311,11 @@ print(a[1])
 2
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Choosing a Name
 
@@ -328,7 +328,7 @@ from someone who is leaving the lab:
 2. `tot_sec = min * 60 + sec`
 3. `total_seconds = minutes * 60 + seconds`
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -337,11 +337,11 @@ from someone who is leaving the lab:
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Slicing practice
 
@@ -352,7 +352,7 @@ atom_name = 'carbon'
 print('atom_name[1:3] is:', atom_name[1:3])
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -360,11 +360,11 @@ print('atom_name[1:3] is:', atom_name[1:3])
 atom_name[1:3] is: ar
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Slicing concepts
 
@@ -384,7 +384,7 @@ What would these expressions return?
 6. `species_name[-5:-3]`
 7. What happens when you choose a `stop` value which is out of range? (i.e., try `species_name[0:20]` or `species_name[:103]`)
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solutions
 
@@ -398,11 +398,11 @@ What would these expressions return?
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Use variables to store values.
 - Use `print` to display values.
@@ -415,6 +415,6 @@ What would these expressions return?
 - Python is case-sensitive.
 - Use meaningful variable names.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

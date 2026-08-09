@@ -4,20 +4,20 @@ teaching: 10
 exercises: 10
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Explain what software libraries are and why programmers create and use them.
 - Write programs that import and use modules from Python's standard library.
 - Find and read documentation for the standard library interactively (in the interpreter) and online.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I use software that other people have written?
 - How can I find out what that software does?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Most of the power of a programming language is in its libraries.
 
@@ -30,7 +30,7 @@ exercises: 10
 - Many additional libraries are available from [PyPI][pypi] (the Python Package Index).
 - We will see later how to write new libraries.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Libraries and modules
 
@@ -39,7 +39,7 @@ interchangeably, especially since many libraries only consist of a single
 module, so don't worry if you mix them.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## A program must import a library module before using it.
 
@@ -132,7 +132,7 @@ cos(pi) is -1.0
 - But can make programs harder to understand,
   since readers must learn your program's aliases.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Exploring the Math Module
 
@@ -140,7 +140,7 @@ cos(pi) is -1.0
   *without* using `sqrt`?
 2. Since the library contains this function, why does `sqrt` exist?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -157,11 +157,11 @@ cos(pi) is -1.0
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Locating the Right Module
 
@@ -175,7 +175,7 @@ bases = 'ACTTGCTTGAC'
 2. Which function would you select from that module? Are there alternatives?
 3. Try to write a program that uses the function.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -211,7 +211,7 @@ print(sample(bases, 1)[0])
 ```
 
 Note that this function returns a list of values. We will learn about
-lists in [episode 11](11-lists.md).
+lists in [episode 11](11-lists.qmd).
 
 The simplest and shortest solution is the [`random.choice`](https://docs.python.org/3/library/random.html#random.choice)
 function that does exactly what we want:
@@ -222,11 +222,11 @@ from random import choice
 print(choice(bases))
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Jigsaw Puzzle (Parson's Problem) Programming Example
 
@@ -244,7 +244,7 @@ ___ = len(bases)
 print("random base ", bases[___], "base index", ___)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -257,11 +257,11 @@ idx = random.randrange(n_bases)
 print("random base", bases[idx], "base index", idx)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## When Is Help Available?
 
@@ -274,7 +274,7 @@ NameError: name 'math' is not defined
 
 What has your colleague forgotten to do?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -282,11 +282,11 @@ Importing the math module (`import math`)
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Importing With Aliases
 
@@ -300,7 +300,7 @@ angle = ____.degrees(____.pi / 2)
 print(____)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -326,11 +326,11 @@ where there are clear abbreviation conventions.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## There Are Many Ways To Import Libraries!
 
@@ -349,7 +349,7 @@ Library calls:
 3. `import math as m`
 4. `from math import *`
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -373,11 +373,11 @@ convey this information.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Importing Specific Items
 
@@ -391,7 +391,7 @@ angle = degrees(pi / 2)
 print(angle)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -409,11 +409,11 @@ were to also import a function named `degrees` from another library.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Reading Error Messages
 
@@ -425,7 +425,7 @@ from math import log
 log(0)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -447,9 +447,9 @@ ValueError: math domain error
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 [stdlib]: https://docs.python.org/3/library/
 [pypi]: https://pypi.python.org/pypi/
@@ -457,7 +457,7 @@ ValueError: math domain error
 [pep8-imports]: https://pep8.org/#imports
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Most of the power of a programming language is in its libraries.
 - A program must import a library module in order to use it.
@@ -465,6 +465,6 @@ ValueError: math domain error
 - Import specific items from a library to shorten programs.
 - Create an alias for a library when importing it to shorten programs.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

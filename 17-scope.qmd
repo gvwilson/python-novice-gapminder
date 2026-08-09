@@ -4,20 +4,20 @@ teaching: 10
 exercises: 10
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Identify local and global variables.
 - Identify parameters as local variables.
 - Read a traceback and determine the file, function, and line number on which the error occurred, the type of error, and the error message.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How do function calls actually work?
 - How can I determine where errors occurred?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## The scope of a variable is the part of a program that can 'see' that variable.
 
@@ -61,7 +61,7 @@ Traceback (most recent call last):
 NameError: name 'temperature' is not defined
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Local and Global Variable Use
 
@@ -78,9 +78,9 @@ value = -22.5
 print(clip(value))
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Reading Error Messages
 
@@ -115,7 +115,7 @@ KeyError                                  Traceback (most recent call last)
 KeyError: 'Friday'
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -130,14 +130,14 @@ KeyError: 'Friday'
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - The scope of a variable is the part of a program that can 'see' that variable.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

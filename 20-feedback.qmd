@@ -1,0 +1,27 @@
+---
+title: Feedback
+teaching: 0
+exercises: 15
+---
+
+::: {.callout-tip title="Objectives"}
+
+- Gather feedback on the class
+
+:::
+
+::: {.callout-note title="Questions"}
+
+- How did the class go?
+
+:::
+
+Gather feedback from participants.
+
+::: {.callout-tip title="Key Points"}
+
+- We are constantly seeking to improve this course.
+
+:::
+
+

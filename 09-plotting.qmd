@@ -4,19 +4,19 @@ teaching: 15
 exercises: 15
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Create a time series plot showing a single data set.
 - Create a scatter plot showing relationship between two data sets.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I plot my data?
 - How can I save my plot for publishing?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## [`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python.
 
@@ -40,7 +40,7 @@ plt.ylabel('Position (km)')
 
 ![](fig/9_simple_position_time_plot.svg){alt='A line chart showing time (hr) relative to position (km), using the values provided in the code block above. By default, the plotted line is blue against a white background, and the axes have been scaled automatically to fit the range of the input data.'}
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Display All Open Figures
 
@@ -58,7 +58,7 @@ plt.show()
 This command can also be used within a Notebook - for instance, to display multiple figures
 if several are created by a single cell.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Plot data directly from a [`Pandas dataframe`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html).
 
@@ -147,7 +147,7 @@ plt.xlabel('Year')
 plt.ylabel('GDP per capita ($)')
 ```
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Adding a Legend
 
@@ -173,7 +173,7 @@ By default matplotlib will attempt to place the legend in a suitable position. I
 would rather specify a position this can be done with the `loc=` argument, e.g to place
 the legend in the upper left corner of the plot, specify `loc='upper left'`
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ![](fig/9_gdp_australia_nz_formatted.svg){alt='GDP formatted plot for Australia and New Zealand'}
 
@@ -192,7 +192,7 @@ data.T.plot.scatter(x = 'Australia', y = 'New Zealand')
 
 ![](fig/9_gdp_correlation_data.svg){alt='GDP correlation using data.T.plot.scatter'}
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Minima and Maxima
 
@@ -208,7 +208,7 @@ plt.legend(loc='best')
 plt.xticks(rotation=90)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -224,11 +224,11 @@ plt.xticks(rotation=90)
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Correlations
 
@@ -237,7 +237,7 @@ the relationship between the minimum and maximum GDP per capita
 among the countries in Asia for each year in the data set.
 What relationship do you see (if any)?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -252,7 +252,7 @@ No particular correlations can be seen between the minimum and maximum GDP value
 year on year. It seems the fortunes of asian countries do not rise and fall together.
 
 
-:::::::::::::::::::::::::
+:::
 
 You might note that the variability in the maximum is much higher than
 that of the minimum.  Take a look at the maximum and the max indexes:
@@ -264,7 +264,7 @@ print(data_asia.idxmax())
 print(data_asia.idxmin())
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -278,11 +278,11 @@ more notably.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## More Correlations
 
@@ -299,7 +299,7 @@ data_all.plot(kind='scatter', x='gdpPercap_2007', y='lifeExp_2007',
 Using online help and other resources,
 explain what each argument to `plot` does.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -319,11 +319,11 @@ of the plotted points.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Saving your plot to a file
 
@@ -358,9 +358,9 @@ fig = plt.gcf() # get current figure
 fig.savefig('my_figure.png')
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Making your plots accessible
 
@@ -371,9 +371,9 @@ Whenever you are generating plots to go into a paper or a presentation, there ar
 - Using color (and nothing else) to distinguish between different plot elements will make your plots unreadable to anyone who is colorblind, or who happens to have a black-and-white office printer. For lines, the `linestyle` parameter lets you use different types of lines. For scatterplots, `marker` lets you change the shape of your points. If you're unsure about your colors, you can use [Coblis](https://www.color-blindness.com/coblis-color-blindness-simulator/) or [Color Oracle](https://colororacle.org/) to simulate what your plots would look like to those with colorblindness.
   
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - [`matplotlib`](https://matplotlib.org/) is the most widely used scientific plotting library in Python.
 - Plot data directly from a Pandas dataframe.
@@ -381,6 +381,6 @@ Whenever you are generating plots to go into a paper or a presentation, there ar
 - Many styles of plot are available: see the [Python Graph Gallery](https://python-graph-gallery.com/matplotlib/) for more options.
 - Can plot many sets of data together.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

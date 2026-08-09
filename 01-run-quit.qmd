@@ -4,7 +4,7 @@ teaching: 15
 exercises: 0
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Launch the JupyterLab server.
 - Create a new Python script.
@@ -14,13 +14,13 @@ exercises: 0
 - Create Markdown cells in a notebook.
 - Create and run Python cells in a notebook.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I run Python programs?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 To run Python, we are going to use [Jupyter Notebooks][jupyter] via [JupyterLab][jupyterlab] for the remainder of this workshop. Jupyter notebooks are common in data science and visualization and serve as a convenient common-denominator experience for running Python code interactively where we can easily view and share the results of our Python code.
 
@@ -47,7 +47,7 @@ reasonably up-to-date browser (ideally a current version of Chrome, Safari, or F
 Explorer versions 9 and below are *not* supported.
 
 JupyterLab is included as part of the Anaconda Python distribution. If you have not already
-installed the Anaconda Python distribution, see [the setup instructions](../learners/setup.md)
+installed the Anaconda Python distribution, see [the setup instructions](setup.qmd)
 for installation instructions.
 
 In this lesson we will run JupyterLab locally on our own machines so it will not require an internet connection besides
@@ -58,7 +58,7 @@ the initial connection to download and install Anaconda and JupyterLab
 - The JupyterLab server does the work and the web browser renders the result
 - Type code into the browser and see the results after your JupyterLab server has finished executing your code
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## JupyterLab? What about Jupyter notebooks?
 
@@ -70,7 +70,7 @@ between the JupyterLab and Jupyter notebook user interfaces can find more inform
 [JupyterLab user interface documentation][jupyterlab-ui].
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Starting JupyterLab
 
@@ -149,7 +149,7 @@ menus are included by default.
 - **Settings:** Common JupyterLab settings can be configured using this menu. There is also an *Advanced Settings Editor* option in the dropdown menu that provides more fine-grained control of JupyterLab settings and configuration options.
 - **Help:** A list of JupyterLab and kernel help links.
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Kernels
 
@@ -162,7 +162,7 @@ Using other Jupyter [kernels for other programming languages](https://github.com
 write and execute code in other programming languages in the same JupyterLab interface, like R, Java, Julia, Ruby, JavaScript, Fortran,
 etc.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 A screenshot of the default Menu Bar is provided below.
 
@@ -221,7 +221,7 @@ more details, then see the [official notebook documentation][jupyterlab-notebook
 <p align='center'>   <img alt="Example Jupyter Notebook" src="fig/0_jupyterlab_notebook_screenshot.png" width="750"/>
 </p>
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## How It's Stored
 
@@ -230,9 +230,9 @@ more details, then see the [official notebook documentation][jupyterlab-notebook
 - But this format allows Jupyter to mix source code, text, and images, all in one file.
   
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Arranging Documents into Panels of Tabs
 
@@ -248,7 +248,7 @@ arrange them into three panels in the main work area. Finally, create your own c
 panels and tabs. What combination of panels and tabs do you think will be most useful for your
 workflow?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -258,11 +258,11 @@ right, top, or bottom of the panel.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Code vs. Text
 
@@ -272,7 +272,7 @@ A "code cell" in a Notebook is a cell that contains software;
 a "text cell" is one that contains ordinary prose written for human beings.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## The Notebook has Command and Edit modes.
 
@@ -286,7 +286,7 @@ a "text cell" is one that contains ordinary prose written for human beings.
   - The <kbd>z</kbd> key will undo your last cell operation (which could be a deletion, creation, etc).
 - All actions can be done using the menus, but there are lots of keyboard shortcuts to speed things up.
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Command Vs. Edit
 
@@ -296,7 +296,7 @@ Use the shortcuts to generate a new cell.
 Use the shortcuts to delete a cell.
 Use the shortcuts to undo the last cell operation you performed.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -308,9 +308,9 @@ You need to be in Command mode (Press <kbd>Esc</kbd> if your cell is blue).  Typ
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ### Use the keyboard and mouse to select and edit cells.
 
@@ -398,7 +398,7 @@ Table: Showing some markdown syntax and its rendered output.
 +---------------------------------------+------------------------------------------------+
 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Creating Lists in Markdown
 
@@ -412,7 +412,7 @@ Create a nested list in a Markdown cell in a notebook that looks like this:
 3. Write up.
 4. Publish.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -429,11 +429,11 @@ Note that the bullet list is indented 2 spaces so that it is inline with the ite
 4.  Publish.
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## More Math
 
@@ -446,7 +446,7 @@ For example, what happens when this cell is executed?
 2 + 1
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -456,11 +456,11 @@ Python returns the output of the last calculation.
 3
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Change an Existing Cell from Code to Markdown
 
@@ -479,7 +479,7 @@ Now go back to the cell and use <kbd>Esc</kbd> then <kbd>m</kbd> to switch the c
 and "run" it with <kbd>Shift</kbd>\+<kbd>Return</kbd>.
 What happened and how might this be useful?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -491,11 +491,11 @@ This could be useful to temporarily turn on and off cells in notebooks that get 
 x = 6 * 7 + 12 print(x)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Equations
 
@@ -512,7 +512,7 @@ $\sum_{i=1}^{N} 2^{-i} \approx 1$
 What does it display?
 What do you think the underscore, `_`, circumflex, `^`, and dollar sign, `$`, do?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -525,9 +525,9 @@ Similarly, `-i` is in curly braces to make the whole statement the superscript f
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Closing JupyterLab
 
@@ -538,14 +538,14 @@ Similarly, `-i` is in curly braces to make the whole statement the superscript f
 $ jupyter lab
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Closing JupyterLab
 
 Practice closing and restarting the JupyterLab server.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 
 
@@ -556,7 +556,7 @@ Practice closing and restarting the JupyterLab server.
 [data_carpentry]: https://datacarpentry.org
 
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Python scripts are plain text files.
 - Use the Jupyter Notebook for editing and running Python.
@@ -565,6 +565,6 @@ Practice closing and restarting the JupyterLab server.
 - The Notebook will turn Markdown into pretty-printed documentation.
 - Markdown does most of what HTML does.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

@@ -1,0 +1,100 @@
+project:
+  type: book
+  output-dir: docs
+
+book:
+  title: "Plotting and Programming in Python"
+  subtitle: "Software Carpentry"
+  author: "The Carpentries"
+  date: "2016-01-07"
+  license: "CC-BY 4.0"
+  repo-url: "https://github.com/swcarpentry/python-novice-gapminder"
+  repo-branch: "main"
+  language: en
+  chapters:
+    - index.qmd
+    - 01-run-quit.qmd
+    - 02-variables.qmd
+    - 03-types-conversion.qmd
+    - 04-built-in.qmd
+    - 05-coffee.qmd
+    - 06-libraries.qmd
+    - 07-reading-tabular.qmd
+    - 08-data-frames.qmd
+    - 09-plotting.qmd
+    - 10-lunch.qmd
+    - 11-lists.qmd
+    - 12-for-loops.qmd
+    - 13-conditionals.qmd
+    - 14-looping-data-sets.qmd
+    - 15-coffee.qmd
+    - 16-writing-functions.qmd
+    - 17-scope.qmd
+    - 18-style.qmd
+    - 19-wrap.qmd
+    - 20-feedback.qmd
+    - setup.qmd
+    - reference.qmd
+    - discuss.qmd
+    - instructor-notes.qmd
+    - learner-profiles.qmd
+  sidebar:
+    title: "Plotting and Programming in Python"
+    style: docked
+    background: light
+    search: true
+
+filters:
+  - _extensions/carpentries/episode-meta.lua
+
+format:
+  html:
+    theme:
+      - cosmo
+      - styles/carpentries.scss
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    number-sections: false
+    code-copy: true
+    code-link: true
+    code-line-numbers: true
+    code-block-bg: "#f8f8f8"
+    code-block-border-left: "#2b3990"
+    highlight-style: arrow
+    citations-hover: true
+    footnotes-hover: true
+  pdf:
+    documentclass: scrbook
+    classoption:
+      - oneside
+      - 11pt
+    papersize: letter
+    toc: true
+    toc-depth: 2
+    number-sections: true
+    colorlinks: true
+    linkcolor: "carpentries-blue"
+    urlcolor: "carpentries-blue"
+    citecolor: "carpentries-green"
+    pdf-engine: lualatex
+    mainfont: Fira Sans
+    monofont: Source Code Pro
+    include-in-header:
+      - text: |
+          \usepackage{fontspec}
+          \setmainfont{Fira Sans}
+          \setmonofont{Source Code Pro}[Scale=MatchLowercase]
+          \usepackage{geometry}
+          \geometry{margin=1in}
+          \usepackage{fancyhdr}
+          \pagestyle{fancy}
+          \fancyhf{}
+          \fancyhead[LE,RO]{\leftmark}
+          \fancyfoot[LE,RO]{\thepage}
+          \renewcommand{\headrulewidth}{0.4pt}
+          \definecolor{carpentries-blue}{HTML}{2b3990}
+          \definecolor{carpentries-green}{HTML}{6ab187}
+          \definecolor{carpentries-orange}{HTML}{f0ad4e}
+          \definecolor{carpentries-red}{HTML}{d9534f}
+    keep-tex: true

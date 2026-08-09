@@ -2,7 +2,7 @@
 title: Lesson Design
 ---
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Help Wanted
 
@@ -12,7 +12,7 @@ Contributions (both in the form of pull requests with filled-in exercises,
 and comments on specific exercises, ordering, and timings) are greatly appreciated.**
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Process Used
 
@@ -141,7 +141,7 @@ I know...
 - Final: extract data from Pandas dataframe
   and create comparative multi-line time series plot.
 
-### [Running and Quitting Interactively](../episodes/01-run-quit.md) (9:00)
+### [Running and Quitting Interactively](01-run-quit.qmd) (9:00)
 
 - Teaching: 15 min (because setup issues)
   - Launch the Jupyter Notebook, create new notebooks, and exit the Notebook.
@@ -153,7 +153,7 @@ I know...
   - Change an existing cell from code to Markdown
   - Rendering LaTeX-style equations
 
-### [Variables and Assignment](../episodes/02-variables.md) (9:15)
+### [Variables and Assignment](02-variables.qmd) (9:15)
 
 - Teaching: 10 min
   - Write programs that assign scalar values to variables and perform calculations with those values.
@@ -165,7 +165,7 @@ I know...
   - Which is a better variable name, `m`, `min`, or `minutes`?
   - What do the following slice expressions produce?
 
-### [Data Types and Type Conversion](../episodes/03-types-conversion.md) (09:35)
+### [Data Types and Type Conversion](03-types-conversion.qmd) (09:35)
 
 - Teaching: 10 min
   - Explain key differences between integers and floating point numbers.
@@ -183,7 +183,7 @@ I know...
   - Given these float, int, and string values, which expressions will print a particular result?
   - What do you expect `1+2j + 3` to produce?
 
-### [Built-in Functions and Help](../episodes/04-built-in.md) (09:55)
+### [Built-in Functions and Help](04-built-in.qmd) (09:55)
 
 - Teaching: 15 min
   - Explain the purpose of functions.
@@ -198,9 +198,9 @@ I know...
   - Given what we have seen so far,
     what index expression will get the last character in a string?
 
-### [Coffee](../episodes/05-coffee.md): 15 min (10:20)
+### [Coffee](05-coffee.qmd): 15 min (10:20)
 
-### [Libraries](../episodes/06-libraries.md) (10:35)
+### [Libraries](06-libraries.qmd) (10:35)
 
 - Teaching: 10 min
   - Explain what software libraries are and why programmers create and use them.
@@ -212,7 +212,7 @@ I know...
   - If `help(math)` produces an error, what have you forgotten to do?
   - Fill in the blanks in code below so that the import statement and program run.
 
-### [Reading Tabular Data](../episodes/07-reading-tabular.md) (10:55)
+### [Reading Tabular Data](07-reading-tabular.qmd) (10:55)
 
 - Teaching: 10 min
   - Import the Pandas library.
@@ -224,7 +224,7 @@ I know...
   - What string(s) should you pass to `read_csv` to read files from other directories?
   - How can you *write* CSV data?
 
-### [DataFrames](../episodes/08-data-frames.md) (11:15)
+### [DataFrames](08-data-frames.qmd) (11:15)
 
 - Teaching: 15 min
   - Select individual values from a Pandas dataframe.
@@ -243,7 +243,7 @@ I know...
     what would you do if asked to create a table of GDP per capita for Poland
     for the Twentieth Century?
 
-### [Plotting](../episodes/09-plotting.md) (11:45)
+### [Plotting](09-plotting.qmd) (11:45)
 
 - Teaching: 15 min
   - Create a time series plot showing a single data set.
@@ -253,9 +253,9 @@ I know...
   - Modify the example to create a scatter plot of GDP per capita in Asian countries.
   - Explain what each argument to `plot` does in the following example.
 
-### [Lunch](../episodes/10-lunch.md) (12:15): 45 min
+### [Lunch](10-lunch.qmd) (12:15): 45 min
 
-### [Lists](../episodes/11-lists.md) (13:00)
+### [Lists](11-lists.qmd) (13:00)
 
 - Teaching: 10 min
   - Explain why programs need collections of values.
@@ -269,7 +269,7 @@ I know...
   - What are the differences between sorting these two ways?
   - What is the difference between `new = old` and `new = old[:]`?
 
-### [Loops](../episodes/12-for-loops.md) (13:20)
+### [Loops](12-for-loops.qmd) (13:20)
 
 - Teaching: 10 min
   - Explain what for loops are normally used for.
@@ -331,7 +331,7 @@ I know...
   - Modify this program so that it always finds the largest and smallest values in a list
     no matter what the list's values are.
 
-### [Programming Style](../episodes/18-style.md) (15:25)
+### [Programming Style](18-style.qmd) (15:25)
 
 - Teaching: 15 min
   - How can I make my programs more readable?
@@ -342,14 +342,14 @@ I know...
   - Turn the comments in this program into docstrings.
   - Rewrite this short program to be more readable.
 
-### [Wrap-Up](../episodes/19-wrap.md) (15:55)
+### [Wrap-Up](19-wrap.qmd) (15:55)
 
 - Teaching: 20 min
   - Name and locate scientific Python community sites for software, workshops, and help.
 - Challenges: 0 min
   - None.
 
-### [Feedback](../episodes/20-feedback.md) (16:15)
+### [Feedback](20-feedback.qmd) (16:15)
 
 - Teaching: 0 min
 - Challenges: 15 min

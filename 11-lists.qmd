@@ -4,18 +4,18 @@ teaching: 10
 exercises: 10
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Explain why programs need collections of values.
 - Write programs that create flat lists, index them, slice them, and modify them through assignment and method calls.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I store multiple values?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## A list stores many values in a single structure.
 
@@ -130,7 +130,7 @@ primes after removing last item: [2, 3, 5, 7]
 - Use `[]` on its own to represent a list that doesn't contain any values.
   - "The zero of lists."
 - Helpful as a starting point for collecting values
-  (which we will see in the [next episode](12-for-loops.md)).
+  (which we will see in the [next episode](12-for-loops.qmd)).
 
 ## Lists may contain values of different types.
 
@@ -176,7 +176,7 @@ TypeError: 'str' object does not support item assignment
 ## Indexing beyond the end of the collection is an error.
 
 - Python reports an `IndexError` if we attempt to access a value that doesn't exist.
-  - This is a kind of [runtime error](04-built-in.md).
+  - This is a kind of [runtime error](04-built-in.qmd).
   - Cannot be detected as the code is parsed
     because the index might be calculated based on data.
 
@@ -188,7 +188,7 @@ print('99th element of element is:', element[99])
 IndexError: string index out of range
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Fill in the Blanks
 
@@ -209,7 +209,7 @@ first time: [1, 3, 5]
 second time: [3, 5]
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -223,34 +223,34 @@ values = values[1:]
 print('second time:', values)
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## How Large is a Slice?
 
 If `start` and `stop` are both non-negative integers,
 how long is the list `values[start:stop]`?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
 The list `values[start:stop]` has up to `stop - start` elements.  For example,
 `values[1:4]` has the 3 elements `values[1]`, `values[2]`, and `values[3]`.
-Why 'up to'? As we saw in [episode 2](02-variables.md),
+Why 'up to'? As we saw in [episode 2](02-variables.qmd),
 if `stop` is greater than the total length of the list `values`,
 we will still get a list back but it will be shorter than expected.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## From Strings to Lists and Back
 
@@ -269,7 +269,7 @@ list to string: gold
 1. What does `list('some string')` do?
 2. What does `'-'.join(['x', 'y', 'z'])` generate?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -280,11 +280,11 @@ list to string: gold
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Working With the End
 
@@ -303,7 +303,7 @@ print(element[-1])
 4. How can you display all elements but the last one without changing `values`?
   (Hint: you will need to combine slicing and negative indexing.)
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -318,11 +318,11 @@ The program prints `m`.
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Stepping Through a List
 
@@ -337,7 +337,7 @@ print(element[::-1])
 1. If we write a slice as `low:high:stride`, what does `stride` do?
 2. What expression would select all of the even-numbered items from a collection?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -356,11 +356,11 @@ eniroulf
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Slice Bounds
 
@@ -372,7 +372,7 @@ print(element[0:20])
 print(element[-1:3])
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -386,11 +386,11 @@ The second statement returns an empty string, because the slice goes "out of bou
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Sort and Sorted
 
@@ -411,7 +411,7 @@ result = letters.sort()
 print('letters is', letters, 'and result is', result)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -433,11 +433,11 @@ list `letters` remains unchanged), while `letters.sort()` sorts the list
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Copying (or Not)
 
@@ -460,7 +460,7 @@ new[0] = 'D'
 print('new is', new, 'and old is', old)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -484,11 +484,11 @@ from the list `old`; `new` and `old` are different objects.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - A list stores many values in a single structure.
 - Use an item's index to fetch it from a list.
@@ -501,6 +501,6 @@ from the list `old`; `new` and `old` are different objects.
 - Character strings are immutable.
 - Indexing beyond the end of the collection is an error.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

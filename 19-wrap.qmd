@@ -4,18 +4,18 @@ teaching: 20
 exercises: 0
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Name and locate scientific Python community sites for software, workshops, and help.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - What have we learned?
 - What else is out there and where do I find it?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 Leslie Lamport once said, "Writing is nature's way of showing you how sloppy your thinking is."
 The same is true of programming:
@@ -42,10 +42,10 @@ turn out to be anything but when we have to explain them precisely.
   [SciPy](https://stackoverflow.com/questions/tagged/scipy?tab=Votes), and
   [Pandas](https://stackoverflow.com/questions/tagged/pandas?tab=Votes).
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Python supports a large and diverse community across academia and industry.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

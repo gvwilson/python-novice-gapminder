@@ -4,7 +4,7 @@ teaching: 15
 exercises: 10
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Explain the purpose of functions.
 - Correctly call built-in Python functions.
@@ -12,15 +12,15 @@ exercises: 10
 - Use help to display documentation for built-in functions.
 - Correctly describe situations in which SyntaxError and NameError occur.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I use built-in functions?
 - How can I find out what they do?
 - What kind of errors can occur in programs?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Use comments to add documentation to programs.
 
@@ -274,7 +274,7 @@ There are several other ways that people often get help when they are stuck with
 
 ### Generative AI
 
-::::::::::::::::::::::::::::: instructor
+::: {.callout-warning title="Instructor Note"}
 
 ### Choose how to teach this section
 The section on generative AI is intended to be concise but Instructors may choose to devote more time to the topic in a workshop.
@@ -287,7 +287,7 @@ Depending on your own level of experience and comfort with talking about and usi
 This is a fast-moving technology. 
 If you are preparing to teach this section and you feel it has become outdated, please open an issue on the lesson repository to let the Maintainers know and/or a pull request to suggest updates and improvements.
 
-::::::::::::::::::::::::::::::::::::::::
+:::
 
 It is increasingly common for people to use _generative AI_ chatbots such as ChatGPT to get help while coding. 
 You will probably receive some useful guidance by presenting your error message to the chatbot and asking it what went wrong. 
@@ -317,7 +317,7 @@ Other ethical concerns have also been raised, such as reports that workers were 
   This means that a generative AI chatbot is _more likely to produce accurate responses_ to questions that novices ask, which could give you a false impression of how reliable they will be when you are ready to do things that are more advanced.
 
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## What Happens When
 
@@ -331,7 +331,7 @@ radiance = 1.0
 radiance = max(2.1, 2.0 + min(radiance, 1.1 * radiance - 0.5))
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -345,11 +345,11 @@ radiance = max(2.1, 2.0 + min(radiance, 1.1 * radiance - 0.5))
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Spot the Difference
 
@@ -366,7 +366,7 @@ print(max(rich, poor))
 print(max(len(rich), len(poor)))
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -405,17 +405,17 @@ TypeError                                 Traceback (most recent call last)
 TypeError: '>' not supported between instances of 'str' and 'int'
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Why Not?
 
 Why is it that `max` and `min` do not return `None` when they are called with no arguments?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -426,11 +426,11 @@ a runtime error.
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Last Character of a String
 
@@ -439,7 +439,7 @@ and `len` returns the number of characters in a string,
 what index expression will get the last character in the string `name`?
 (Note: we will see a simpler way to do this in a later episode.)
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -447,11 +447,11 @@ what index expression will get the last character in the string `name`?
 
 
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Explore the Python docs!
 
@@ -461,9 +461,9 @@ resources. The [Built-in Functions page](https://docs.python.org/3/library/funct
 all of these functions, including the ones that we've covered in this lesson. Some of these are more advanced and
 unnecessary at the moment, but others are very simple and useful.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Use comments to add documentation to programs.
 - A function may take zero or more arguments.
@@ -477,6 +477,6 @@ unnecessary at the moment, but others are very simple and useful.
 - Python reports a runtime error when something goes wrong while a program is executing.
 - Fix syntax errors by reading the source code, and runtime errors by tracing the program's execution.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

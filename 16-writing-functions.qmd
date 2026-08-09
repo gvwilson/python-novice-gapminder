@@ -4,18 +4,18 @@ teaching: 10
 exercises: 15
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Explain and identify the difference between function definition and function call.
 - Write a function that takes a small, fixed number of arguments and produces a single result.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I create my own functions?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Break programs down into functions to make them easier to understand.
 
@@ -132,7 +132,7 @@ print('average of empty list:', average([]))
 average of empty list: None
 ```
 
-- Remember: [every function returns something](04-built-in.md).
+- Remember: [every function returns something](04-built-in.qmd).
 - A function that doesn't explicitly `return` a value automatically returns `None`.
 
 ```python
@@ -145,7 +145,7 @@ print('result of call is:', result)
 result of call is: None
 ```
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Identifying Syntax Errors
 
@@ -163,7 +163,7 @@ def another_function
   print("So they are usually not too hard to fix.")
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -174,11 +174,11 @@ def another_function():
   print("So they are usually not too hard to fix.")
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Definition and Use
 
@@ -191,7 +191,7 @@ def report(pressure):
 print('calling', report, 22.5)
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -211,11 +211,11 @@ calling
 pressure is 22.5
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Order of Operations
 
@@ -245,7 +245,7 @@ pressure is 22.5
 
 3. Why is the result of the call `None`?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -259,11 +259,11 @@ pressure is 22.5
 
 3. `print_time()` does not explicitly `return` a value, so it automatically returns `None`.
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Encapsulation
 
@@ -279,7 +279,7 @@ def min_in_data(____):
     return ____
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -291,11 +291,11 @@ def min_in_data(filename):
     return data.min()
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Find the First
 
@@ -310,7 +310,7 @@ def first_negative(values):
             return ____
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -332,11 +332,11 @@ print(first_negative(my_list))
 None
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Calling by Name
 
@@ -358,7 +358,7 @@ print_date(day=1, month=2, year=2003)
 2. When have you seen a function call like this before?
 3. When and why is it useful to call functions this way?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -372,11 +372,11 @@ print_date(day=1, month=2, year=2003)
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Encapsulation of an If/Print Block
 
@@ -424,7 +424,7 @@ for i in range(10):
 1. Create a function definition for `get_egg_label()` that will work with the revised program above.  Note that the `get_egg_label()` function's return value will be important. Sample output from the above program would be `71.23 large`.
 2. A dirty egg might have a mass of more than 90 grams, and a spoiled or broken egg will probably have a mass that's less than 50 grams.  Modify your `get_egg_label()` function to account for these error conditions. Sample output could be `25 too light, probably spoiled`.
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -447,11 +447,11 @@ def get_egg_label(mass):
     return egg_label
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Encapsulating Data Analysis
 
@@ -490,7 +490,7 @@ japan = data_asia.loc['Japan']
   (Hint: use the columns to filter out the ones that correspond to the decade,
   instead of enumerating them in the code.)
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -539,11 +539,11 @@ avg_gdp_in_decade('Japan','asia',1983)
 20880.023800000003
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Simulating a dynamical system
 
@@ -571,7 +571,7 @@ density. In the model, time takes discrete values 0, 1, 2, ...
   the logistic map at times `t = [0,1,...,t_final]`. Run this function for periods `t_final = 100`
   and `1000` and print some of the values. Is the population trending toward a steady state?
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -615,11 +615,11 @@ density. In the model, time takes discrete values 0, 1, 2, ...
   
   
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Using Functions With Conditionals in Pandas
 
@@ -669,9 +669,9 @@ column in the dataframe called `data` labeled `lifExp`.  We use the
 value of this column for every row in the dataframe.
 
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Break programs down into functions to make them easier to understand.
 - Define a function using `def` with a name, parameters, and a block of code.
@@ -679,6 +679,6 @@ value of this column for every row in the dataframe.
 - Arguments in a function call are matched to its defined parameters.
 - Functions may return a result to their caller using `return`.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

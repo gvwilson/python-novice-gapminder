@@ -1,0 +1,69 @@
+/*-- scss:defaults --*/
+$primary: #071159;          // Carpentries navy
+$body-bg: #ffffff;
+$link-color: #2b3990;
+
+/*-- scss:rules --*/
+
+// Callout box overrides to match Carpentries colors
+.callout-tip {
+  border-left-color: #6ab187;   // green for objectives/keypoints
+}
+
+.callout-note {
+  border-left-color: #2b3990;   // blue for callouts/questions
+}
+
+.callout-important {
+  border-left-color: #f0ad4e;   // orange for challenges
+}
+
+.callout-warning {
+  border-left-color: #d9534f;   // red for instructor notes
+}
+
+.callout-caution {
+  border-left-color: #5bc0de;   // teal for prerequisites
+}
+
+// Solution callout styling
+.callout-tip.callout-collapsed {
+  summary {
+    color: #6ab187;
+  }
+}
+
+// Episode metadata bar
+.episode-meta {
+  background: #f7f7f7;
+  border-radius: 4px;
+  padding: 0.5em 1em;
+  margin-bottom: 1.5em;
+  font-size: 0.9em;
+  color: #555;
+}
+
+// Key cap styling
+kbd {
+  background-color: #eee;
+  border-radius: 3px;
+  border: 1px solid #b4b4b4;
+  box-shadow: 0 1px 1px rgba(0,0,0,.2);
+  color: #333;
+  display: inline-block;
+  font-size: .85em;
+  font-weight: 700;
+  line-height: 1;
+  padding: 2px 4px;
+  white-space: nowrap;
+}
+
+// Code blocks
+pre.sourceCode {
+  border: 1px solid #ddd;
+}
+
+// Sidebar styles
+.sidebar nav[role=doc-toc] ul > li > a.active {
+  border-left: 3px solid #2b3990;
+}

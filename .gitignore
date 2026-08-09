@@ -53,3 +53,6 @@ vendor/
 .docker-vendor/
 Gemfile.lock
 .*history
+
+/.quarto/
+**/*.quarto_ipynb

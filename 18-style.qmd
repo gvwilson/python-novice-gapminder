@@ -4,21 +4,21 @@ teaching: 15
 exercises: 15
 ---
 
-::::::::::::::::::::::::::::::::::::::: objectives
+::: {.callout-tip title="Objectives"}
 
 - Provide sound justifications for basic rules of coding style.
 - Refactor one-page programs to make them more readable and justify the changes.
 - Use Python community coding standards (PEP-8).
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: questions
+::: {.callout-note title="Questions"}
 
 - How can I make my programs more readable?
 - How do most programmers format their code?
 - How can programs check their own operation?
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 ## Coding style
 
@@ -78,7 +78,7 @@ average(values)
     Return average of values, or None if no values are supplied.
 ```
 
-:::::::::::::::::::::::::::::::::::::::::  callout
+::: {.callout-note}
 
 ## Multiline Strings
 
@@ -93,9 +93,9 @@ multiple lines.
 Blank lines are allowed."""
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## What Will Be Shown?
 
@@ -122,9 +122,9 @@ def overall_max(sequences):
     return highest
 ```
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Document This
 
@@ -148,7 +148,7 @@ def middle(a, b, c):
     return values[1]
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -161,11 +161,11 @@ def middle(a, b, c):
     return values[1]
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::  challenge
+::: {.callout-important title="Challenge"}
 
 ## Clean Up This Code
 
@@ -195,7 +195,7 @@ while i < n:
     i += 1
 ```
 
-:::::::::::::::  solution
+::: {.callout-tip title="Solution" collapse="true"}
 
 ## Solution
 
@@ -243,15 +243,15 @@ et cetera
 ---*---*-
 ```
 
-:::::::::::::::::::::::::
+:::
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
-:::::::::::::::::::::::::::::::::::::::: keypoints
+::: {.callout-tip title="Key Points"}
 
 - Follow standard Python style in your code.
 - Use docstrings to provide builtin help.
 
-::::::::::::::::::::::::::::::::::::::::::::::::::
+:::
 
 

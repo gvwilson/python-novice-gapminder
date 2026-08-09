@@ -4,7 +4,7 @@ title: 'Reference'
 
 ## Reference
 
-## [Running and Quitting](episodes/01-run-quit.md)
+## [Running and Quitting](01-run-quit.qmd)
 
 - Python files have the `.py` extension.
 - Can be written in a text file or a [Jupyter Notebook][jupyter].
@@ -12,7 +12,7 @@ title: 'Reference'
   - Jupyter notebooks can be opened from [Anaconda](https://docs.continuum.io/anaconda/install) or through the command line by entering `$ jupyter notebook`
     - Markdown and HTML are allowed in markdown cells for documenting code.
 
-## [Variables and Assignment](episodes/02-variables.md)
+## [Variables and Assignment](02-variables.qmd)
 
 - Variables are stored using `=`.
   - Strings are defined in quotations `'...'`.
@@ -29,7 +29,7 @@ title: 'Reference'
     - `stop` is the index of the element after the last desired element.
 - Use `len(...)` to find the length of a variable or string.
 
-## [Data Types and Type Conversion](episodes/03-types-conversion.md)
+## [Data Types and Type Conversion](03-types-conversion.qmd)
 
 - Each value has a type. This controls what can be done with it.
   - `int` represents an integer
@@ -43,7 +43,7 @@ title: 'Reference'
     - Convert string to integer: `int(...)`.
     - Convert integer to string: `str(...)`.
 
-## [Built-in Functions and Help](episodes/04-built-in.md)
+## [Built-in Functions and Help](04-built-in.qmd)
 
 - To add a comment, place `#` before the thing you do not with to be executed.
 - Commonly used built-in functions:
@@ -53,7 +53,7 @@ title: 'Reference'
   - `help()` displays documentation for the function in the parenthesis.
     - Other ways to get help include holding down `shift` and pressing `tab` in Jupyter Notebooks.
 
-## [Libraries](episodes/06-libraries.md)
+## [Libraries](06-libraries.qmd)
 
 - Importing a library:
   - Use `import ...` to load a library.
@@ -65,7 +65,7 @@ title: 'Reference'
   - Example of referring to an item with the module's name: `math.cos(math.pi)`.
 - Importing the plotting library as an alias: `import matplotlib as mpl`
 
-## [Reading Tabular Data into DataFrames](episodes/07-reading-tabular.md)
+## [Reading Tabular Data into DataFrames](07-reading-tabular.qmd)
 
 - Use the pandas library to do statistics on tabular data. Load with `import pandas as pd`.
   - To read in a csv: `pd.read_csv()`, including the path name in the parenthesis.
@@ -75,7 +75,7 @@ title: 'Reference'
 - Use `DataFrame.T` to transpose a DataFrame.
 - Use `DataFrame.describe` to get summary statistics about your data.
 
-## [Pandas DataFrames](episodes/08-data-frames.md)
+## [Pandas DataFrames](08-data-frames.qmd)
 
 - Select data using `[i,j]`
   - To select by entry position: `DataFrame.iloc[..., ...]`
@@ -89,7 +89,7 @@ title: 'Reference'
   - We can then use this to select values.
 - To use a select-apply-combine operation we use `data.apply(lambda x: x > x.mean())` where `mean()` can be any operation the user would like to be applied to x.
 
-## [Plotting](episodes/09-plotting.md)
+## [Plotting](09-plotting.qmd)
 
 - The most widely used plotting library is `matplotlib`.
   - Usually imported using `import matplotlib.pyplot as plt`.
@@ -108,7 +108,7 @@ plt.ylabel('y axis label')
 plt.legend()
 ```
 
-## [Lists](episodes/11-lists.md)
+## [Lists](11-lists.qmd)
 
 - Defined within `[...]` and separated by `,`.
   - An empty list can be created by using `[]`.
@@ -119,7 +119,7 @@ plt.legend()
 - To combine two lists use `list_name_1.extend(list_name_2)`.
 - To remove an item from a list use `del list_name[index]`.
 
-## [For Loops](episodes/12-for-loops.md)
+## [For Loops](12-for-loops.qmd)
 
 - Start a for loop with `for number in [1, 2, 3]:`, with the following lines indented.
   - `[1, 2, 3]` is considered the collection.
@@ -132,7 +132,7 @@ for number in range(0,5):
     print(number)
 ```
 
-## [Conditionals](episodes/13-conditionals.md)
+## [Conditionals](13-conditionals.qmd)
 
 - Defined similarly to a loop, using `if variable conditional value:`.
   - For example, `if variable > 5:`.
@@ -157,7 +157,7 @@ for m in [3, 6, 7, 2, 8]:
         print(m, 'is small')
 ```
 
-## [Looping Over Data Sets](episodes/14-looping-data-sets.md)
+## [Looping Over Data Sets](14-looping-data-sets.qmd)
 
 - Use a for loop: `for filename in [file1, file2]:`
 - To find a set of files using a pattern use `glob.glob`
@@ -172,7 +172,7 @@ for filename in glob.glob(*.txt):
   data = pd.read_csv(filename)
 ```
 
-## [Writing Functions](episodes/16-writing-functions.md)
+## [Writing Functions](16-writing-functions.qmd)
 
 - Define a function using `def function_name(parameters):`. Replace `parameters` with the variables to use when the function is executed.
 - Run by using `function_name(parameters)`.
@@ -186,12 +186,12 @@ def add_numbers(a, b):
 add_numbers(1, 4)
 ```
 
-## [Variable Scope](episodes/17-scope.md)
+## [Variable Scope](17-scope.qmd)
 
 - A local variable is defined in a function and can only be seen and used within that function.
 - A global variable is defined outside of a function and can be seen or used anywhere after definition.
 
-## [Programming Style](episodes/18-style.md)
+## [Programming Style](18-style.qmd)
 
 - Document your code.
 - Use clear and meaningful variable names.
